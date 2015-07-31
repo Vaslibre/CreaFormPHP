@@ -1,0 +1,7 @@
+*
+!.gitignore
+!conexion.php
+!config.ini
+!index.php
+!LICENSE
+!README.md
