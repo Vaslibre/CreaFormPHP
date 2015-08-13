@@ -108,7 +108,7 @@ while ($campo = @mysql_fetch_array($query)) {
                 <input type="text" class="form-control" name="'.strtolower($nombre_campo).'" id="'.strtolower($nombre_campo).'" placeholder="'.$nombre_campo.'">
             </div>';
         $value .= "'%s', ";
-        $mysql_r .= " \t mysql_real_escape_string("."$".$campo[0]."), \r\n" ;	}
+        $mysql_r .= " \t mysqli_real_escape_string("."$"."mysqli,"."$".$campo[0]."), \r\n" ;	}
     else { $value .= "NULL, ";  }
 }
 $formulario.='
